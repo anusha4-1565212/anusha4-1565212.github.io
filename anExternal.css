@@ -1,0 +1,38 @@
+p.georgia {
+    font-family: Georgia;
+}
+
+p.lucidaConsole {
+    font-family: "Lucida Console";
+}
+img.picture {
+	height: 50px;
+	width: 50px;
+}
+div.image { 
+   position: relative; 
+   width: 50%; 
+}
+
+h2 { 
+   	position: absolute;
+   	text-align: center;
+   	vertical-align: center;
+   	top: 200px; 
+   	left: 0; 
+   	width: 100%; 
+   	color: white;
+}
+
+img.margins {
+	margin: 20px 20px 20px 20px;
+}
+
+p.dotted {
+	border-style: dotted;
+}
+
+img.float {
+	float: right;
+    margin: 0px 30px 30px 30px;
+}
