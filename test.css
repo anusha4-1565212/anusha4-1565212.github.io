@@ -40,6 +40,12 @@
 	text-align: center;
 }
 
+#bow {
+	color: #FFBC00;
+	font-weight: bold;
+	font-size: 20px;
+}
+
 ul {
 	list-style-type: none;
 	padding-left: 0px;
