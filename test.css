@@ -45,6 +45,12 @@ ul {
 	padding-left: 0px;
 }
 
+p {
+	font-weight: bold;
+	color: white;
+	font-family: "Arial";
+}
+
 h3 {
 	color: #FFBC00;
 	font-size: 40px;
