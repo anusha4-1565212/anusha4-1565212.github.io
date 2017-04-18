@@ -14,8 +14,8 @@
 	<fieldset>
 		<legend>Account</legend>
 		<div class="field">
-			<label>Email:</label> 
-			<input type="text" name="email">
+			  <label>E-mail:</label>
+			  <input type="email" name="email">
 		</div>
 		<div class="field">
 			<label>Password:</label> 
@@ -34,10 +34,22 @@
 			<input type="text" name="name">
 		</div>
 		<div class="field">
+			<label>Preferred Name:</label> 
+			<input type="text" name="name">
+		</div>
+		<div>
+			<label>Date of Birth:</label>
+  			<input type="date" name="bday">
+		</div>
+		<div class="field">
 			<label>Gender:</label>
 			<input type="radio" name="gender" value="male"> Male 
 			<input type="radio" name="gender" value="female"> Female
 			<input type="radio" name="gender" value="other"> Other
+		</div>
+		<div class="field">
+			<label>Telephone:</label>
+  			<input type="tel" name="usrtel">
 		</div>
 		<div class="field">
 			<label>Street Address:</label> 
@@ -110,12 +122,38 @@
 		</div>
 		<div class="field">
 			<label>Social Security Number (SSN):</label> 
-			<input type="text" name="ssn">
+			<input type="password" name="password">
+		</div>
+		<br>
+		<div class="field">
+			<label>Have you been convicted of or pleaded no contest to a felony within the last five years?</label>
+			<input type="radio" name="crimimal_yes" value="yes"> Yes
+			<input type="radio" name="crimimal_no" value="no"> No
+			<br>
+			<label>If yes, please describe the crime - state nature of the crime(s), when and where convicted and disposition of the case.</label>
+			<br>
+			<textarea name="project" rows="6" cols="60"></textarea>
 		</div>
 	</fieldset>
 
 	<fieldset>
 		<legend>Professional Information</legend>
+		<div class="field">
+			<label>Year of Graduation:</label>
+			<input type="month" name="bdaymonth">
+		</div>
+		<br>
+		<div class="field">
+			<label>Which position are you applying for?</label>
+			<select name="position">
+				<option value="" selected="true">Choose a position</option>
+				<option value="ID">Interface Designer</option>
+				<option value="SE">Software Engineer</option>
+				<option value="SA">System Administrator</option>
+				<option value="OM">Office Manager</option>
+			</select>	
+		</div>
+		<br>
 		<div class="field">
 			<label>Languages? (check all that apply)</label>
 			<ul>
@@ -135,6 +173,7 @@
 			<input type="radio" name="legal" value="yes">Yes
 			<input type="radio" name="legal" value="no">No
 		</div>
+		<br>
 		<div class="field">
 			<label>What type of position are you seeking? (check all that apply)</label>
 			<ul>
@@ -194,8 +233,9 @@
 	</fieldset>
 
 	<br>
-	<input id="form" type="submit" value="Submit form">
-	<input id="form" type="reset" value="Reset form">
+	<input id="submit" type="submit" value="Submit form">
+	<input id="reset" type="reset" value="Reset form">
+	<!-- <input type="button" onclick="alert('Your form is going to be reset!')" value="Reset"> -->
 
 </form>
 </body>
